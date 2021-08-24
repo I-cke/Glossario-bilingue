@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+	<meta charset = 'UTF-8'>
+	<meta name = 'description' content = 'inserir palavras ao gloossário'>
+	<link rel="stylesheet" href="Ins_input_style.min.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--
+	<link rel="stylesheet" href="input_style.min.css">
+	-->
+    <p><title>Inserir</title></p>
+</head>
+<body>
+
+			<div class = "logo" >
+				<img src = 'Logo(2)_site.png'>
+			<div>
+				<div>
+					<h1 id = "titulo">Insira um termo para o glossário</h1>
+				</div>
+
+<a class = "Home" href = "index.html"><h3>Home</h3></a>
+
+<form action="insere_termo_glossario.php" method="POST">
+	<p>Palavra Termo:  <input type="text"name="edt_palavra_termo" class = "inp_plvr_ter"></p>
+	<p>Sigla: <input type="text"name="edt_sigla"class = "inp_sig"></p>
+	<p>Classe gramatical:  <input type="text"name="edt_classe_gramatical" class = "inp_cls_grm"></p>
+	<p>Traducao literal: <input type="text"name="edt_traducao_literal" class = "inp_trd_lit"></p>
+	<p>Traducao aplicada: <input type="text"name="edt_traducao_aplicada" class = "inp_trd_apl">
+	<button class = "btn">Enviar</buton>
+</form>
+<form>
+<button>Apagar ou alterar</button>
+</form>
+</body>
+</html>
+
+<!–
+$id = $_POST['edt_id'];
+$palavra_termo = $_POST['edt_palavra_termo'];
+$sigla = $_POST['edt_sigla'];
+$classe_gramatical = $_POST['edt_classe_gramatical'];
+$traducao_literal = $_POST['edt_traducao_literal'];
+$traducao_aplicada = $_POST['edt_traducao_aplicada'];
+->
